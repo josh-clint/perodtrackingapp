@@ -180,9 +180,13 @@ def symptoms():
         symptoms = cursor.fetchall()
         return jsonify({"success": True, "symptoms": [dict(row) for row in symptoms]})
 
-@app.route('/frontend')
+@app.route('/')
 def serve_index():
-    return send_from_directory('frontend/pages', 'index.html')
+    return send_from_directory('frontend/pages', 'login.html')
+
+@app.route('/register')
+def serve_register():
+    return send_from_directory('frontend/pages', 'register.html')
 
 @app.route('/home')
 @login_required

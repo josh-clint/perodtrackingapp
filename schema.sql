@@ -26,3 +26,4 @@ CREATE TABLE symptoms (
 
 -- Example: Insert a user (for testing - REMOVE IN PRODUCTION)
 -- INSERT INTO users (email, password) VALUES ('test@example.com', 'pbkdf2_sha256_600000some_salt$hashed_password');
+-- Insert Int
